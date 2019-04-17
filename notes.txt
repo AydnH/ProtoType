@@ -1,0 +1,15 @@
+			-debugging and library
+		-maybe able to print api info onto server
+		-npmjs 
+	-
+	- put into web page to prove data collection.|
+	--turn on apis	
+	-create project in api console
+	-credentials
+	-customise data structure for collection
+	-make web app
+	-node express erver stuff
+- hit apis, *bookmarks*
+	-console.cloud.google.com
+
+	postman extension 
