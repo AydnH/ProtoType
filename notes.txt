@@ -17,3 +17,7 @@
 
 user activity api
 google analytics
+
+984145743933-bqjss62mqrok3ncc7cl4mp7ba7a25s47.apps.googleusercontent.com - client id
+
+nupa0pPFVfuRF_7E7V2pRFVU - client secret
