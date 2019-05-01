@@ -8,7 +8,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-138540684-1');
 </script>
 
@@ -25,12 +24,12 @@
 <p class="g-signin2" data-onsuccess="queryReports"></p>
 
 <!-- The API response will be printed here. -->
-<textarea cols="80" rows="20" id="query-output"></textarea>
+
+<div cols="80" rows="20" id="query-output"></div>
 
 <script>
   // Replace with your view ID.
   var VIEW_ID = '193681664';
-
   // Query the API and print the results to the page.
   function queryReports() {
     gapi.client.request({
@@ -57,17 +56,23 @@
       }
     }).then(displayResults, console.error.bind(console));
   }
-
   function displayResults(response) {
     var formattedJson = JSON.stringify(response.result, null, 2);
     document.getElementById('query-output').value = formattedJson;
+    console.log(formattedJson);
+
+ 	var sendString = formattedJson;
+ 	alert(sendString);
+ 	xhttp.send(sendString);
+
   }
+ 
 </script>
 
 <!-- Load the JavaScript API client and Sign-in library. -->
 <script src="https://apis.google.com/js/client:platform.js"></script>
 
-<script> console.log(server.js)</script>
+
 
 </body>
 </html>
