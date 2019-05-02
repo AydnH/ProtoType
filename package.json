@@ -13,6 +13,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "debug": "^4.1.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "googleanalytics": "^0.4.0"
   }
 }

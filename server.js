@@ -28,4 +28,4 @@ app.listen(port, () => {
   debug(`Example app listening on port ${port}!`);
 
 });
-console.log('debug'. debug + console.log());
+console.log('debug' . debug + console.log());

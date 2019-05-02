@@ -1,0 +1,225 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2019-05-02 04:26:43",
+    "containerVersion": {
+        "path": "accounts/4701889518/containers/11830601/versions/1",
+        "accountId": "4701889518",
+        "containerId": "11830601",
+        "containerVersionId": "1",
+        "name": "user id tracking",
+        "container": {
+            "path": "accounts/4701889518/containers/11830601",
+            "accountId": "4701889518",
+            "containerId": "11830601",
+            "name": "aydnh.github.io",
+            "publicId": "GTM-WJWJR82",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1556769839903",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/4701889518/containers/11830601/workspaces?apiLink=container"
+        },
+        "variable": [
+            {
+                "accountId": "4701889518",
+                "containerId": "11830601",
+                "variableId": "3",
+                "name": "GA Settings",
+                "type": "gas",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "doubleClick",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTrackerName",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDebugVersion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "fieldsToSet",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "fieldName",
+                                        "value": "{{userId}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{custom js - user id}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "fieldName",
+                                        "value": "{{userId}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{dlv - user id}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useHashAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decorateFormsAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableLinkId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "UA-138540684-1"
+                    }
+                ],
+                "fingerprint": "1556770864454"
+            },
+            {
+                "accountId": "4701889518",
+                "containerId": "11830601",
+                "variableId": "2",
+                "name": "custom js - user id",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  if ({{dlv - user id}}) {\n    var d = new Date();\n    d.setTime(d.getTime()+1000*60*60*24*365*2);\n    var expires = 'expires='+d.toGMTString();\n    document.cookie = 'userId=' + {{dlv - user id}} + '; '+expires+'; path=/';\n    return {{dlv - user id}};\n  } \n  return;\n}"
+                    }
+                ],
+                "fingerprint": "1556771034876",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701889518",
+                "containerId": "11830601",
+                "variableId": "5",
+                "name": "dlv - user id",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "dlv - user id"
+                    }
+                ],
+                "fingerprint": "1556770724474",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701889518",
+                "containerId": "11830601",
+                "variableId": "1",
+                "name": "userId",
+                "type": "k",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decodeCookie",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "userId"
+                    }
+                ],
+                "fingerprint": "1556767980542",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "4701889518",
+                "containerId": "11830601",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "4701889518",
+                "containerId": "11830601",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "4701889518",
+                "containerId": "11830601",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "4701889518",
+                "containerId": "11830601",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "4701889518",
+                "containerId": "11830601",
+                "type": "EVENT",
+                "name": "Event"
+            },
+            {
+                "accountId": "4701889518",
+                "containerId": "11830601",
+                "type": "DEBUG_MODE",
+                "name": "Debug Mode"
+            },
+            {
+                "accountId": "4701889518",
+                "containerId": "11830601",
+                "type": "CONTAINER_ID",
+                "name": "Container ID"
+            }
+        ],
+        "fingerprint": "1556771075497",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/4701889518/containers/11830601/versions/1?apiLink=version"
+    }
+}
